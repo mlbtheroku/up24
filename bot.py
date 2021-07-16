@@ -10,7 +10,7 @@ from asyncio import TimeoutError
 from pyrogram.errors import MessageNotModified
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message, CallbackQuery
 
-from configs import Config
+from sample_config import Config
 from helpers.database.access_db import db
 from helpers.check_gap import CheckTimeGap
 from helpers.setup_prefix import SetupPrefix
