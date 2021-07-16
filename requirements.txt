@@ -12,3 +12,8 @@ feedparser
 requests
 tgcrypto
 youtube-dl
+dnspython
+aiofiles
+motor
+pyromod
+psutil
