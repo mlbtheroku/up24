@@ -11,8 +11,8 @@
   ],
   
   "success_url": "https://github.com/Satyamurthi",
-  "website": "https://github.com/Satyamurthi/AMR-Url_Uploader",
-  "repository": "https://github.com/Satyamurthi/AMR-Url_Uploader",
+  "website": "https://github.com/satyushree/AMR-Url_Uploader",
+  "repository": "https://github.com/satyushree/AMR-Url_Uploader",
   
   "env": {
     "WEBHOOK": {
