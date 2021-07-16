@@ -4,7 +4,7 @@
 
 <h1 align="center">AMR-Url_Uploader</h1>
 <p align="center">
-  <a href="https://github.com/Avipatilpro/FileStreamBot">
+  <a href="https://github.com/satyushree/AMR-Url_Uploader">
     <img src="https://socialify.git.ci/satyushree/AMR-Url_Uploader/image?description=1&font=Bitter&forks=1&issues=1&logo=https%3A%2F%2Ftelegra.ph%2Ffile%2F8eddfc57dde92ec6e288e.jpg&pattern=Brick%20Wall&pulls=1&stargazers=1&theme=Dark" alt="Cover Image" width="550">
   </a>
   
