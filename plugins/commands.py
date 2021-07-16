@@ -1,4 +1,10 @@
 import os
+import os
+import time
+import psutil
+import shutil
+import string
+import asyncio
 if bool(os.environ.get("WEBHOOK", False)):
     from sample_config import Config
 else:
@@ -6,7 +12,7 @@ else:
 from translation import Translation
 from plugins.broadcast import broadcast_handler
 from pyrogram import Client, filters
-from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
+from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, Message
 
 @Client.on_message(filters.command(["start"]) & filters.private)
 async def start(bot, update):
