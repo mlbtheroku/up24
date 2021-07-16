@@ -30,26 +30,15 @@ if __name__ == "__main__" :
     plugins = dict(
         root="plugins"
     )
-    app = Client(
+ShreeBot = Client(
         "URL Uploader",
         bot_token=Config.TG_BOT_TOKEN,
         api_id=Config.APP_ID,
         api_hash=Config.API_HASH,
         plugins=plugins
     )
-    Config.AUTH_USERS
-    app.run()
-    
-RenameBot = Client(
-    session_name=Config.SESSION_NAME,
-    api_id=Config.API_ID,
-    api_hash=Config.API_HASH,
-    bot_token=Config.BOT_TOKEN
-)
 
-
-
-@RenameBot.on_message(filters.private & filters.photo & ~filters.edited)
+@ShreeBot.on_message(filters.private & filters.photo & ~filters.edited)
 async def photo_handler(bot: Client, event: Message):
     await AddUserToDatabase(bot, event)
     FSub = await ForceSub(bot, event)
@@ -60,7 +49,7 @@ async def photo_handler(bot: Client, event: Message):
     await editable.edit("Permanent Custom Thumbnail Saved Successfully!")
 
 
-@RenameBot.on_message(filters.private & filters.command(["delete_caption", "del_caption", "remove_caption", "rm_caption"]) & ~filters.edited)
+@ShreeBot.on_message(filters.private & filters.command(["delete_caption", "del_caption", "remove_caption", "rm_caption"]) & ~filters.edited)
 async def delete_caption(bot: Client, event: Message):
     await AddUserToDatabase(bot, event)
     FSub = await ForceSub(bot, event)
@@ -70,12 +59,12 @@ async def delete_caption(bot: Client, event: Message):
     await event.reply_text("Custom Caption Removed Successfully!")
 
 
-@RenameBot.on_message(filters.private & filters.command("broadcast") & filters.user(Config.BOT_OWNER) & filters.reply)
+@ShreeBot.on_message(filters.private & filters.command("broadcast") & filters.user(Config.BOT_OWNER) & filters.reply)
 async def _broadcast(_, event: Message):
     await broadcast_handler(event)
 
 
-@RenameBot.on_message(filters.private & filters.command("status") & filters.user(Config.BOT_OWNER))
+@ShreeBot.on_message(filters.private & filters.command("status") & filters.user(Config.BOT_OWNER))
 async def show_status_count(_, event: Message):
     total, used, free = shutil.disk_usage(".")
     total = humanbytes(total)
@@ -91,5 +80,5 @@ async def show_status_count(_, event: Message):
         quote=True
     )
 
-
-RenameBot.run()
+    Config.AUTH_USERS
+    ShreeBot.run()
