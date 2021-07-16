@@ -42,5 +42,4 @@ ShreeBot = Client(
 async def _broadcast(_, event: Message):
     await broadcast_handler(event)
 
-    Config.AUTH_USERS
-    ShreeBot.run()
+ShreeBot.run()
