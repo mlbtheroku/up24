@@ -3,9 +3,10 @@
   "description": "An url uploader bot with permenent thumbnail support",
   "keywords": [
     "telegram",
+    "bot",
+    "files",
     "url",
-    "zee5",
-    "downloader"
+    "downloader",
     "uploader",
     "pyrogram"
   ],
