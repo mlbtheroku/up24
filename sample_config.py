@@ -52,7 +52,7 @@ class Config(object):
     DEF_WATER_MARK_FILE = ""
 
     # Sql Database url
-    DB_URI = os.environ.get("DATABASE_URL", "")
+    #DB_URI = os.environ.get("DATABASE_URL", "")
 
     # the download location, where the HTTP Server runs
     DOWNLOAD_LOCATION = "./DOWNLOADS"
@@ -69,8 +69,6 @@ class Config(object):
     CAPTION = "Uploaded by @All_Movie_Rockers"
     
     MONGODB_URI = os.environ.get("MONGODB_URI", "")
-    
-    DOWNLOAD_PATH = os.environ.get("DOWNLOAD_PATH", "./downloads")
     
     BROADCAST_AS_COPY = bool(os.environ.get("BROADCAST_AS_COPY", True))
     
