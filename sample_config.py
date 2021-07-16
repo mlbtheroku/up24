@@ -60,15 +60,19 @@ class Config(object):
     # Banned Unwanted Members..
     BANNED_USERS = set(int(x) for x in os.environ.get("BANNED_USERS", "").split())
     
-    
-    
-    API_ID = int(os.environ.get("API_ID", 12345))
     SESSION_NAME = os.environ.get("SESSION_NAME", "1shree")
+    
     SLEEP_TIME = int(os.environ.get("SLEEP_TIME", 5))
+    
     BOT_OWNER = os.environ.get("BOT_OWNER", 1445283714)
+    
     CAPTION = "Uploaded by @All_Movie_Rockers"
+    
     MONGODB_URI = os.environ.get("MONGODB_URI", "")
+    
     DOWNLOAD_PATH = os.environ.get("DOWNLOAD_PATH", "./downloads")
+    
     BROADCAST_AS_COPY = bool(os.environ.get("BROADCAST_AS_COPY", True))
+    
     START_TEXT = ""
     PROGRESS = ""
