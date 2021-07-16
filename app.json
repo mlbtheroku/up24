@@ -27,9 +27,6 @@
     "APP_ID": {
       "description": "Get this value from https://my.telegram.org"
     },
-    "API_ID": {
-      "description": "Get this value from my.telegram.org or @TeleORG_Bot"
-    },
     "API_HASH": {
       "description": "Get this value from https://my.telegram.org"
     },
@@ -45,8 +42,7 @@
       "value": "0"
     },
     "LOG_CHANNEL": {
-      "description": "To get logs",
-      "value": "0"
+      "description": "Logs Channel ID for some Tracking XD. Example: -100123456789"
     },
     "DEF_WATER_MARK_FILE": {
       "description": "Set any name(Optional)",
@@ -71,16 +67,6 @@
     "BOT_OWNER": {
       "description": "Bot Owner UserID"
     },
-    "MONGODB_URI": {
-      "description": "MongoDB Database URI for Saving UserID for Broadcast. Tutorial: https://www.youtube.com/watch?v=aXlF80Cn7iU"
-    },
-    "UPDATES_CHANNEL": {
-      "description": "ID of a Channel which you want to do Force Sub to use the bot. Example: -100123456789",
-      "required": false
-    },
-    "LOG_CHANNEL": {
-      "description": "Logs Channel ID for some Tracking XD. Example: -100123456789"
-    },
     "DOWNLOAD_PATH": {
       "description": "Files download path. You can keep default. Should not end with '/'",
       "required": false,
@@ -89,10 +75,6 @@
     "SLEEP_TIME": {
       "description": "Time Gap Between Process. Keep Default.",
       "value": "5"
-    },
-    "ONE_PROCESS_ONLY": {
-      "description": "Allow Only One Rename Process at a Time by User.",
-      "required": false
     },
     "BROADCAST_AS_COPY": {
       "description": "Broadcast as Copy or with Forward Tag. Value should be True/False."
