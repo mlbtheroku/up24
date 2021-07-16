@@ -96,6 +96,7 @@
     },
     "BROADCAST_AS_COPY": {
       "description": "Broadcast as Copy or with Forward Tag. Value should be True/False."
+      "value": "True"
     },
     "SESSION_NAME": {
       "description": "Any Bot Session Name."
