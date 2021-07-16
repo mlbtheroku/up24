@@ -13,7 +13,6 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message, 
 from sample_config import Config
 from helpers.database.access_db import db
 from helpers.check_gap import CheckTimeGap
-from helpers.setup_prefix import SetupPrefix
 from helpers.broadcast import broadcast_handler
 from helpers.database.add_user import AddUserToDatabase
 
