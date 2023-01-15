@@ -43,7 +43,7 @@ class Config(object):
     MAX_MESSAGE_LENGTH = 4096
 
     # set timeout for subprocess
-    PROCESS_MAX_TIMEOUT = int(os.environ.get("TIME_LIMIT", 800))
+    PROCESS_MAX_TIMEOUT = int(os.environ.get("TIME_LIMIT"))
     
     # dict to hold the ReQuest queue
     ADL_BOT_RQ = {}
