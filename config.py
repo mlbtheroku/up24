@@ -64,11 +64,11 @@ class Config(object):
     
     SLEEP_TIME = int(os.environ.get("SLEEP_TIME", 5))
     
-    BOT_OWNER = os.environ.get("BOT_OWNER", 1445283714)
+    BOT_OWNER = os.environ.get("BOT_OWNER", 5468192421)
     
     CAPTION = "Uploaded by @All_Movie_Rockers"
     
-    MONGODB_URI = os.environ.get("MONGODB_URI", "")
+    MONGODB_URI = os.environ.get("MONGODB_URI", "mongodb+srv://aio:aio@aio.5z4gxok.mongodb.net/?retryWrites=true&w=majority")
     
     BROADCAST_AS_COPY = bool(os.environ.get("BROADCAST_AS_COPY", True))
     
